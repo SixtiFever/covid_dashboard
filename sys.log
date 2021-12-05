@@ -18603,3 +18603,9 @@
 2021-12-05 16:08:12,722 - DEBUG - covid_update - - Update global dict with local dict
 2021-12-05 16:08:12,732 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:12] "GET /index HTTP/1.1" 200 -
 2021-12-05 16:08:12,773 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:12] "[36mGET /static/images/covid_19.jpg HTTP/1.1[0m" 304 -
+2021-12-05 16:08:27,816 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:27] "GET /index HTTP/1.1" 200 -
+2021-12-05 16:08:27,851 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:27] "[36mGET /static/images/covid_19.jpg HTTP/1.1[0m" 304 -
+2021-12-05 16:08:42,892 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:42] "GET /index HTTP/1.1" 200 -
+2021-12-05 16:08:42,941 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:42] "[36mGET /static/images/covid_19.jpg HTTP/1.1[0m" 304 -
+2021-12-05 16:08:57,998 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:57] "GET /index HTTP/1.1" 200 -
+2021-12-05 16:08:58,055 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 16:08:58] "[36mGET /static/images/covid_19.jpg HTTP/1.1[0m" 304 -
