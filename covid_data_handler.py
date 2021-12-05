@@ -26,6 +26,7 @@ news_list.append(update_news())
 
 
 
+
 ##################### FLASK ###############################
 
 """ http://127.0.0.1:5000/index """
@@ -47,7 +48,7 @@ def update():
     return render_template('index.html', hospital_cases = data_dict['hospital_cases'], 
     deaths_total = data_dict['total_deaths'], national_7day_infections = data_dict['national_7day_rate'], 
     local_7day_infections = data_dict['local_7day_rate'], nation_location = data_dict['nation_location'],
-    location = data_dict['area_name'], updates = sched_list, news_articles = news_list)
+    location = data_dict['area_name'], updates = sched_list, news_articles = news_list, favicon = '')
 
 
 """ 
@@ -171,9 +172,14 @@ def schedule_covid_updates(update_name: str, update_interval: str):
     logger.info('- Covid-data checked')
     if covid_arg:
         s.enter(secs_until, 1, covid_update, argument=(config['interface_data']['area_name'], config['interface_data']['nation']))
+        s.run(blocking=False)
     logger.info('- news checked')
     if news_arg:
         s.enter(secs_until, 1, update_news, kwargs={'keyword':config['interface_data']['news_kw']})
+        s.run(blocking=False)
+    if repeat and news_arg:
+        s.enter(secs_until, 1, update_news, kwargs={'keyword':config['interface_data']['news_kw']})
+        s.enter(86400, 1, update_news, kwargs={'keyword':config['interface_data']['news_kw']})
         s.run(blocking=False)
     
     '''
@@ -185,8 +191,9 @@ def schedule_covid_updates(update_name: str, update_interval: str):
     '''
 
     """ removing sched item at index 0 after the event has been executed """
-    logger.debug('- Remove sched item')
-    s.enter(secs_until+1, 1, remove_sched_event)
+    if repeat is None:
+        logger.debug('- Remove sched item')
+        s.enter(secs_until+1, 1, remove_sched_event, argument=(sched_item,))
     return None
 
 
@@ -203,8 +210,8 @@ Extra functions
 def covid_update(local_area = 'Exeter', nation = 'England'):
     """ set empty data structs for appending to """
     hospital_cases = 0
-    # national_7day_cases = 0
-    # local_7day_cases = 0
+    national_7day_cases = 0
+    local_7day_cases = 0
     total_deaths = 0
     
     """ setting national data for hospital cases and total deaths """
@@ -234,7 +241,8 @@ def covid_update(local_area = 'Exeter', nation = 'England'):
                 last_7_days_national.append(daily_national_cases)
                 # national_7day_cases += data_item['newCasesByPublishDate']
                 # national_7day_rate = round(national_7day_cases / 7)
-        national_rate = round(((last_7_days_national[0] - last_7_days_national[6]) / last_7_days_national[6]) * 100)
+        # national_rate = round(((last_7_days_national[0] - last_7_days_national[6]) / last_7_days_national[6]) * 100)
+        national_rate = sum(last_7_days_national)
 
     """ specifying data for a selected city in the last 7 days """
     logger.info('- Call API and slicing list for last 7 days (local)')
@@ -250,12 +258,13 @@ def covid_update(local_area = 'Exeter', nation = 'England'):
                 last_7_days_local.append(daily_local_cases)
                 # local_7day_cases += data_item['newCasesByPublishDate']
                 # local_7day_rate = round(local_7day_cases / 7)
-        local_rate = round(((last_7_days_local[0] - last_7_days_local[6]) / last_7_days_local[6]) * 100)
+        # local_rate = round(((last_7_days_local[0] - last_7_days_local[6]) / last_7_days_local[6]) * 100)
+        local_rate = sum(last_7_days_local)
 
     """ assigning data to dict. All data here is what's needed for the interface """
     logger.info('- Assigning to metrics to corresponding interface units')
     local_dict = {'hospital_cases':f'{hospital_cases}', 'total_deaths':f'{total_deaths}', 
-    'national_7day_rate':f'{national_rate}%', 'local_7day_rate':f'{local_rate}%',
+    'national_7day_rate':f'{national_rate}', 'local_7day_rate':f'{local_rate}',
     'area_name':f'{local_area}', 'nation_location':f'{nation}'}
 
     """ updating global dict with local dict data """
@@ -298,8 +307,8 @@ def convert_list(input_list: list):
     return int_list
 
 """ function to automate the removal of the recently executed sched event from sched_list """
-def remove_sched_event():
-    sched_list.pop(0)
+def remove_sched_event(list_item):
+    sched_list.remove(list_item)
     return None
 
 # """ remove article when x is clicked """
