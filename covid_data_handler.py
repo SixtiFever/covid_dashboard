@@ -1,6 +1,7 @@
+import os
 import sched, time, json, logging
 from PIL import Image
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 from covid_news_handling import update_news, remove_article, news_list
 from uk_covid19 import Cov19API
 from types import DynamicClassAttribute
@@ -25,8 +26,7 @@ sched_list = list()
 """ to populate an initial news feed upon first load """
 news_list.append(update_news())
 
-""" assigning the unpacked image to image """
-image = Image.open('favicon.ico')
+
 
 
 
@@ -37,6 +37,7 @@ image = Image.open('favicon.ico')
 
 @app.route('/index')
 def update():
+
     """ Populating dashboard on start-up. Then ensuring it doesn't overwrite dict on every refresh.
     It's always len 0 on start-up, but once populated, covid_update will keep replacing dict items """
     if len(data_dict) == 0:
@@ -52,7 +53,8 @@ def update():
     return render_template('index.html', hospital_cases = data_dict['hospital_cases'], 
     deaths_total = data_dict['total_deaths'], national_7day_infections = data_dict['national_7day_rate'], 
     local_7day_infections = data_dict['local_7day_rate'], nation_location = data_dict['nation_location'],
-    location = data_dict['area_name'], updates = sched_list, news_articles = news_list, favicon = image)
+    location = data_dict['area_name'], updates = sched_list, news_articles = news_list,
+    image = 'covid_19.jpg' )
 
 
 """ 
