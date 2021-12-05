@@ -1,4 +1,5 @@
 import sched, time, json, logging
+from PIL import Image
 from flask import Flask, render_template, request
 from covid_news_handling import update_news, remove_article, news_list
 from uk_covid19 import Cov19API
@@ -24,6 +25,9 @@ sched_list = list()
 """ to populate an initial news feed upon first load """
 news_list.append(update_news())
 
+""" assigning the unpacked image to image """
+image = Image.open('favicon.ico')
+
 
 
 
@@ -48,7 +52,7 @@ def update():
     return render_template('index.html', hospital_cases = data_dict['hospital_cases'], 
     deaths_total = data_dict['total_deaths'], national_7day_infections = data_dict['national_7day_rate'], 
     local_7day_infections = data_dict['local_7day_rate'], nation_location = data_dict['nation_location'],
-    location = data_dict['area_name'], updates = sched_list, news_articles = news_list, favicon = '')
+    location = data_dict['area_name'], updates = sched_list, news_articles = news_list, favicon = image)
 
 
 """ 

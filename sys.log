@@ -17031,3 +17031,863 @@
 2021-12-05 15:02:50,842 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:02:50] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
 2021-12-05 15:03:05,879 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:05] "GET /index HTTP/1.1" 200 -
 2021-12-05 15:03:05,908 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:05] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:03:20,948 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:20] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:03:20,992 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:20] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:03:36,035 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:36] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:03:36,060 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:36] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:03:53,350 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:53] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:03:53,378 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:03:53] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:04:10,852 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:10] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:04:10,882 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:10] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:04:28,352 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:28] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:04:28,389 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:28] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:04:43,427 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:43] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:04:43,460 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:43] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:04:58,507 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:58] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:04:58,539 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:04:58] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:05:13,592 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:05:13] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:05:13,619 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:05:13] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:05:28,670 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:05:28] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:05:28,709 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:05:28] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:05:34,194 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:05:34,240 - INFO - _log -  * Restarting with stat
+2021-12-05 15:05:35,409 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:05:35,410 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:05:35,433 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:05:35,705 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:05:35,708 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:05:35,708 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:05:35,708 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:05:35,708 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:05:35,721 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:05:35,739 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:05:45,099 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:05:45,099 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:05:45,145 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:05:45,252 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:05:45,273 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:05:45,762 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:05:45,770 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:05:45,770 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:05:45,781 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:05:45,861 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:05:45,875 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:05:45,954 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:05:45,957 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:05:45,958 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:05:45,964 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:05:46,071 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:05:46,086 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:05:46,263 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:05:46,265 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:05:46,265 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:05:46,278 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:05:46] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:05:46,306 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:05:46] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:05:58,585 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:05:58,640 - INFO - _log -  * Restarting with stat
+2021-12-05 15:05:59,011 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:05:59,011 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:05:59,024 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:05:59,494 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:05:59,497 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:05:59,497 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:05:59,497 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:05:59,498 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:05:59,521 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:05:59,521 - DEBUG - call - STREAM b'gAMA' 41 4
+2021-12-05 15:05:59,521 - DEBUG - call - STREAM b'IDAT' 57 8192
+2021-12-05 15:05:59,529 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:05:59,541 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:06:01,345 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:06:01,345 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:01,378 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:01,790 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:01,802 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:01,878 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:01,884 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:06:01,884 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:01,893 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:01,970 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:02,215 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:02,296 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:02,299 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:06:02,300 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:02,307 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:02,379 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:02,392 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:02,466 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:02,470 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:06:02,470 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:06:02,481 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:02] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:06:02,496 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:02] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:06:08,920 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:06:09,066 - INFO - _log -  * Restarting with stat
+2021-12-05 15:06:09,496 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:06:09,496 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:06:09,507 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:06:09,659 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:06:09,663 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:06:09,663 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:06:09,663 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:06:09,663 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:06:09,695 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:06:09,695 - DEBUG - call - STREAM b'gAMA' 41 4
+2021-12-05 15:06:09,695 - DEBUG - call - STREAM b'IDAT' 57 8192
+2021-12-05 15:06:09,702 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:06:09,710 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:06:17,530 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:06:17,531 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:17,543 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:17,965 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:17,979 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:18,051 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:18,055 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:06:18,055 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:18,062 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:18,135 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:18,148 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:18,224 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:18,228 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:06:18,228 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:18,237 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:18,308 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:18,320 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:18,394 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:18,397 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:06:18,397 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:06:18,409 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:18] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:06:18,432 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:18] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:06:18,466 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:18] "[33mGET /%3CPIL.PngImagePlugin.PngImageFile%20image%20mode=RGBA%20size=280x280%20at%200x7F8AF17474F0%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:06:35,965 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:35] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:06:36,001 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:36] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:06:39,752 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:06:39,799 - INFO - _log -  * Restarting with stat
+2021-12-05 15:06:40,147 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:06:40,147 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:06:40,157 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:06:40,397 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:06:40,402 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:06:40,402 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:06:40,402 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:06:40,402 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:06:40,430 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:06:40,430 - DEBUG - call - STREAM b'gAMA' 41 4
+2021-12-05 15:06:40,430 - DEBUG - call - STREAM b'IDAT' 57 8192
+2021-12-05 15:06:40,446 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:06:40,476 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:06:51,039 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:06:51,039 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:51,098 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:51,190 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:51,512 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:51,584 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:51,590 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:06:51,591 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:51,597 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:51,671 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:51,684 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:51,758 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:51,761 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:06:51,762 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:06:51,767 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:51,849 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:06:51,862 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:06:51,933 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:06:51,937 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:06:51,937 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:06:51,948 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:51] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:06:51,972 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:51] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:06:52,012 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:06:52] "[33mGET /%3CPIL.PngImagePlugin.PngImageFile%20image%20mode=RGBA%20size=280x280%20at%200x7FA567F474F0%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:06:53,122 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:06:53,179 - INFO - _log -  * Restarting with stat
+2021-12-05 15:06:53,467 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:06:53,467 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:06:53,479 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:06:53,957 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:06:53,961 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:06:53,961 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:06:53,961 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:06:53,961 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:06:53,970 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:06:53,970 - DEBUG - call - STREAM b'gAMA' 41 4
+2021-12-05 15:06:53,970 - DEBUG - call - STREAM b'IDAT' 57 8192
+2021-12-05 15:06:53,978 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:06:53,986 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:07:00,308 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:07:00,309 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:07:00,323 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:07:00,428 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:07:00,448 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:07:00,533 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:07:00,551 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:07:00,551 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:07:00,568 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:07:00,647 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:07:00,697 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:07:00,843 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:07:00,845 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:07:00,845 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:07:00,850 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:07:00,928 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:07:00,945 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:07:01,019 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:07:01,022 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:07:01,022 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:07:01,032 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:01] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:01,092 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:01] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:07:01,298 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:01] "[33mGET /%3CPIL.PngImagePlugin.PngImageFile%20image%20mode=RGBA%20size=280x280%20at%200x7F89BDF474F0%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:07:07,016 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:07] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:07,046 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:07] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:07:16,267 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:16] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:16,303 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:16] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:07:22,101 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:22] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:22,137 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:22] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:07:31,837 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:31] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:31,866 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:31] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:07:39,648 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:39] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:39,689 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:39] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:07:49,385 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:49] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:49,409 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:49] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:07:57,184 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:57] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:07:57,207 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:07:57] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:05,588 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:05] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:05,613 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:05] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:14,705 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:14] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:14,729 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:14] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:20,670 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:20] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:20,719 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:20] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:29,782 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:29] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:29,811 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:29] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:35,755 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:35] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:35,782 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:35] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:44,858 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:44] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:44,890 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:44] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:50,829 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:50] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:50,854 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:50] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:08:59,940 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:59] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:08:59,965 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:08:59] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:09:06,012 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:06] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:09:06,052 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:06] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:09:15,390 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:15] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:09:15,495 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:15] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:09:21,084 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:21] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:09:21,106 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:21] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:09:30,561 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:30] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:09:30,613 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:30] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:09:36,161 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:36] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:09:36,206 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:09:36] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:09:43,124 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler_test.py', reloading
+2021-12-05 15:09:43,187 - INFO - _log -  * Restarting with stat
+2021-12-05 15:09:43,926 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:09:43,926 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:09:43,940 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:09:44,414 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:09:44,418 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:09:44,418 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:09:44,418 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:09:44,418 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:09:45,192 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:09:45,192 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:09:45,205 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:09:45,433 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:09:45,443 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:09:45,444 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:09:45,444 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:09:45,444 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:09:46,226 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:09:46,226 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:09:46,239 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:09:46,477 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:09:46,486 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:09:46,486 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:09:46,486 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:09:46,486 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:09:47,247 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:09:47,247 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:09:47,264 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:09:47,424 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:09:47,427 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:09:47,427 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:09:47,427 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:09:47,428 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:10:06,416 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:10:06,416 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:10:06,429 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:10:06,580 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:10:06,582 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:10:06,582 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:10:06,583 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:10:06,583 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:10:34,959 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:10:34,960 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:10:34,977 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:10:35,133 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:10:35,137 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:10:35,138 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:10:35,138 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:10:35,138 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:10:35,177 - INFO - _log -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 15:10:35,180 - INFO - _log -  * Restarting with stat
+2021-12-05 15:10:35,557 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:10:35,557 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:10:35,569 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:10:36,002 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:10:36,012 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:10:36,012 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:10:36,012 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:10:36,013 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:10:36,050 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:10:36,068 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:10:37,180 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:10:37,181 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:10:37,257 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:10:37,348 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:10:37,373 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:10:37,587 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:10:37,607 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:10:37,607 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:10:37,622 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:10:37,708 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:10:37,725 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:10:37,809 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:10:37,813 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:10:37,813 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:10:37,824 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:10:37,902 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:10:37,916 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:10:38,209 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:10:38,212 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:10:38,212 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:10:38,229 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:10:38] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:10:38,302 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:10:38] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:10:38,557 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:10:38] "[33mGET /%3CPIL.JpegImagePlugin.JpegImageFile%20image%20mode=RGB%20size=280x280%20at%200x7FB53AF47790%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:10:53,526 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:10:53] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:10:53,563 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:10:53] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:11:05,352 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:11:05,408 - INFO - _log -  * Restarting with stat
+2021-12-05 15:11:06,079 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:11:06,079 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:11:06,092 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:11:09,163 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:11:09,163 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:11:09,172 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:11:09,334 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:11:09,337 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:11:09,337 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:11:09,337 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:11:09,337 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:11:09,401 - INFO - _log -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 15:11:09,402 - INFO - _log -  * Restarting with stat
+2021-12-05 15:11:10,016 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:11:10,016 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:11:10,028 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:11:10,198 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:11:10,200 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:11:10,200 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:11:10,201 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:11:10,201 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:11:10,242 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:11:10,250 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:11:10,304 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:11:10,305 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:11:10,334 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:10,434 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:11:10,475 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:10,547 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:11:10,553 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:11:10,553 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:11:10,560 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:10,979 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:11:10,993 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:11,068 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:11:11,071 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:11:11,072 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:11:11,079 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:11,153 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:11:11,166 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:12,247 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:11:12,250 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:11:12,250 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:11:12,263 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:12] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:11:12,341 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:12] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:11:12,478 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:12] "[33mGET /%3CPIL.JpegImagePlugin.JpegImageFile%20image%20mode=RGB%20size=280x280%20at%200x7FBFD4F477F0%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:11:25,221 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:25] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:11:25,359 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:25] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:11:27,875 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:27] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:11:27,909 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:27] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:11:39,376 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:11:39,425 - INFO - _log -  * Restarting with stat
+2021-12-05 15:11:40,258 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:11:40,259 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:11:40,276 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:11:40,431 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:11:40,435 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:11:40,435 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:11:40,435 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:11:40,435 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:11:40,548 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:11:40,579 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:11:40,735 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:11:40,742 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:11:40,797 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:40,894 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:11:40,964 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:41,050 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:11:41,058 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:11:41,058 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:11:41,067 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:41,148 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:11:41,162 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:41,237 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:11:41,239 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:11:41,239 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:11:41,246 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:41,313 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:11:41,328 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:11:41,406 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:11:41,410 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:11:41,410 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:11:41,442 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:41] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:11:41,485 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:41] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:11:43,011 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:43] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:11:43,041 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:11:43] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:12:05,563 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:12:05,563 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:12:05,574 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:12:05,727 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:12:05,730 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:12:05,730 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:12:05,730 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:12:05,730 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:12:05,748 - INFO - _log -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 15:12:05,750 - INFO - _log -  * Restarting with stat
+2021-12-05 15:12:06,068 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:12:06,068 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:12:06,079 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:12:06,241 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:12:06,244 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:12:06,245 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:12:06,245 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:12:06,245 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:12:06,260 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:12:06,265 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:12:10,661 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:12:10,661 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:12:10,705 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:12:10,804 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:12:10,821 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:12:11,117 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:12:11,124 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:12:11,125 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:12:11,133 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:12:11,212 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:12:11,226 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:12:11,307 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:12:11,312 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:12:11,312 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:12:11,319 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:12:11,538 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:12:11,551 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:12:11,779 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:12:11,782 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:12:11,782 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:12:11,817 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:12:11] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:12:11,874 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:12:11] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:16:24,821 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:16:24,822 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:16:24,876 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:16:25,518 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:16:25,525 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:16:25,525 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:16:25,525 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:16:25,525 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:16:25,713 - INFO - _log -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 15:16:25,716 - INFO - _log -  * Restarting with stat
+2021-12-05 15:16:26,265 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:16:26,266 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:16:26,277 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:16:26,426 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:16:26,429 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:16:26,429 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:16:26,429 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:16:26,430 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:16:26,445 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:16:26,456 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:16:26,596 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:16:26,596 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:16:26,704 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:16:26,796 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:16:26,809 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:16:27,031 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:16:27,040 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:16:27,040 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:16:27,048 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:16:27,139 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:16:27,192 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:16:27,269 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:16:27,273 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:16:27,273 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:16:27,279 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:16:27,402 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:16:27,413 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:16:27,588 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:16:27,591 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:16:27,591 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:16:27,603 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:16:27] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:16:27,732 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:16:27] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:16:42,885 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:16:42] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:16:42,931 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:16:42] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:16:58,126 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:16:58] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:16:58,154 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:16:58] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:17:13,444 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:17:13] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:17:13,487 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:17:13] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:17:29,035 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:17:29] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:17:29,389 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:17:29] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:17:44,422 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:17:44] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:17:44,463 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:17:44] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:21:39,123 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:21:39,199 - INFO - _log -  * Restarting with stat
+2021-12-05 15:21:40,101 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:21:40,101 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:21:40,127 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:21:40,738 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:21:40,742 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:21:40,742 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:21:40,742 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:21:40,742 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:21:40,761 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:21:40,761 - DEBUG - call - STREAM b'sRGB' 41 1
+2021-12-05 15:21:40,762 - DEBUG - call - STREAM b'IDAT' 54 8192
+2021-12-05 15:21:40,774 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:21:40,791 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:21:44,164 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:21:44,164 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:21:44,219 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:21:44,325 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:21:44,349 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:21:44,660 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:21:44,669 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:21:44,669 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:21:44,676 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:21:44,800 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:21:44,815 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:21:44,894 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:21:44,897 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:21:44,897 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:21:44,904 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:21:44,989 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:21:44,999 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:21:45,185 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:21:45,188 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:21:45,188 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:21:45,201 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:21:45] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:21:45,256 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:21:45] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:21:45,390 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:21:45] "[33mGET /%3CPIL.PngImagePlugin.PngImageFile%20image%20mode=RGBA%20size=180x180%20at%200x7FDF4CF474C0%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:21:59,516 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:21:59,516 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:21:59,533 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:21:59,696 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:21:59,699 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:21:59,700 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:21:59,700 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:21:59,700 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:21:59,712 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:21:59,712 - DEBUG - call - STREAM b'sRGB' 41 1
+2021-12-05 15:21:59,712 - DEBUG - call - STREAM b'IDAT' 54 8192
+2021-12-05 15:21:59,763 - INFO - _log -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 15:21:59,764 - INFO - _log -  * Restarting with stat
+2021-12-05 15:22:00,655 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:22:00,656 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:22:00,671 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:22:00,825 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:22:00,827 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:22:00,827 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:22:00,827 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:22:00,827 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:22:00,835 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:22:00,836 - DEBUG - call - STREAM b'sRGB' 41 1
+2021-12-05 15:22:00,836 - DEBUG - call - STREAM b'IDAT' 54 8192
+2021-12-05 15:22:00,866 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:22:00,873 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:22:00,952 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:22:00,953 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:22:00,967 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:01,059 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:22:01,085 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:01,195 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:22:01,202 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:22:01,202 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:22:01,231 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:01,686 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:22:01,698 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:01,779 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:22:01,781 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:22:01,781 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:22:01,787 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:01,873 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:22:01,885 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:01,972 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:22:01,975 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:22:01,975 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:22:01,985 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:01] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:22:02,022 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:02] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:22:02,115 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:02] "[33mGET /%3CPIL.PngImagePlugin.PngImageFile%20image%20mode=RGBA%20size=180x180%20at%200x7FAEC5F47520%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:22:09,380 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:09] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:22:09,482 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:09] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:22:14,604 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:22:14,662 - INFO - _log -  * Restarting with stat
+2021-12-05 15:22:15,041 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:22:15,041 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:22:15,056 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:22:15,204 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:22:15,211 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:22:15,211 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:22:15,211 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:22:15,211 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:22:15,230 - DEBUG - call - STREAM b'IHDR' 16 13
+2021-12-05 15:22:15,230 - DEBUG - call - STREAM b'sRGB' 41 1
+2021-12-05 15:22:15,230 - DEBUG - call - STREAM b'IDAT' 54 8192
+2021-12-05 15:22:15,288 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:22:15,296 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:22:17,095 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:22:17,096 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:22:17,107 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:17,533 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:22:17,545 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:17,616 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:22:17,623 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:22:17,623 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:22:17,630 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:17,715 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:22:17,726 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:17,801 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:22:17,804 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:22:17,804 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:22:17,812 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:17,887 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:22:17,900 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:22:17,976 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:22:17,980 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:22:17,980 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:22:17,991 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:17] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:22:18,020 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:18] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:22:18,080 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:18] "[33mGET /%3CPIL.PngImagePlugin.PngImageFile%20image%20mode=RGBA%20size=180x180%20at%200x7F8ED2747520%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:22:33,071 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:33] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:22:33,109 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:33] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:22:48,161 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:48] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:22:48,222 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:22:48] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:23:03,276 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:03] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:23:03,310 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:03] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:23:08,291 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:23:08,333 - INFO - _log -  * Restarting with stat
+2021-12-05 15:23:08,635 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:23:08,636 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:23:08,688 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:23:09,174 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:23:09,180 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:23:09,180 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:23:09,180 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:23:09,180 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:23:09,234 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:23:09,239 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:23:18,353 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:23:18,353 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:23:18,407 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:18,883 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:23:18,916 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:19,193 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:23:19,199 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:23:19,200 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:23:19,209 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:19,281 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:23:19,297 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:19,373 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:23:19,375 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:23:19,375 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:23:19,382 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:19,486 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:23:19,502 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:19,685 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:23:19,688 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:23:19,688 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:23:19,699 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:19] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:23:19,729 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:19] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:23:19,787 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:19] "[33mGET /%3CPIL.JpegImagePlugin.JpegImageFile%20image%20mode=RGB%20size=280x280%20at%200x7F9F938767F0%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:23:25,013 - INFO - _log -  * Detected change in '/Users/JDSwift/Desktop/Python/Assignment1/covid_data_handler.py', reloading
+2021-12-05 15:23:25,090 - INFO - _log -  * Restarting with stat
+2021-12-05 15:23:25,412 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:23:25,413 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:23:25,422 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:23:25,573 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:23:25,576 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:23:25,576 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:23:25,576 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:23:25,576 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:23:25,591 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:23:25,597 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:23:34,788 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:23:34,788 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:23:34,800 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:35,218 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:23:35,233 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:35,309 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:23:35,315 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:23:35,316 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:23:35,323 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:35,401 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:23:35,414 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:35,489 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:23:35,491 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:23:35,491 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:23:35,499 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:35,576 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:23:35,587 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:23:35,661 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:23:35,664 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:23:35,664 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:23:35,674 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:35] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:23:35,699 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:35] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:23:35,751 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:23:35] "[33mGET /%3CPIL.JpegImagePlugin.JpegImageFile%20image%20mode=RGB%20size=280x280%20at%200x7FB293876790%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:28:21,058 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:28:21,059 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:28:21,081 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:28:21,338 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:28:21,341 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:28:21,341 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:28:21,341 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:28:21,341 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:28:21,356 - DEBUG - init - Importing BlpImagePlugin
+2021-12-05 15:28:21,358 - DEBUG - init - Importing BmpImagePlugin
+2021-12-05 15:28:21,358 - DEBUG - init - Importing BufrStubImagePlugin
+2021-12-05 15:28:21,359 - DEBUG - init - Importing CurImagePlugin
+2021-12-05 15:28:21,361 - DEBUG - init - Importing DcxImagePlugin
+2021-12-05 15:28:21,363 - DEBUG - init - Importing DdsImagePlugin
+2021-12-05 15:28:21,364 - DEBUG - init - Importing EpsImagePlugin
+2021-12-05 15:28:21,374 - DEBUG - init - Importing FitsStubImagePlugin
+2021-12-05 15:28:21,376 - DEBUG - init - Importing FliImagePlugin
+2021-12-05 15:28:21,377 - DEBUG - init - Importing FpxImagePlugin
+2021-12-05 15:28:21,378 - DEBUG - init - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2021-12-05 15:28:21,378 - DEBUG - init - Importing FtexImagePlugin
+2021-12-05 15:28:21,378 - DEBUG - init - Importing GbrImagePlugin
+2021-12-05 15:28:21,379 - DEBUG - init - Importing GifImagePlugin
+2021-12-05 15:28:21,380 - DEBUG - init - Importing GribStubImagePlugin
+2021-12-05 15:28:21,380 - DEBUG - init - Importing Hdf5StubImagePlugin
+2021-12-05 15:28:21,381 - DEBUG - init - Importing IcnsImagePlugin
+2021-12-05 15:28:21,386 - DEBUG - init - Importing IcoImagePlugin
+2021-12-05 15:28:21,388 - DEBUG - init - Importing ImImagePlugin
+2021-12-05 15:28:21,389 - DEBUG - init - Importing ImtImagePlugin
+2021-12-05 15:28:21,390 - DEBUG - init - Importing IptcImagePlugin
+2021-12-05 15:28:21,391 - DEBUG - init - Importing JpegImagePlugin
+2021-12-05 15:28:21,392 - DEBUG - init - Importing Jpeg2KImagePlugin
+2021-12-05 15:28:21,392 - DEBUG - init - Importing McIdasImagePlugin
+2021-12-05 15:28:21,393 - DEBUG - init - Importing MicImagePlugin
+2021-12-05 15:28:21,394 - DEBUG - init - Image: failed to import MicImagePlugin: No module named 'olefile'
+2021-12-05 15:28:21,394 - DEBUG - init - Importing MpegImagePlugin
+2021-12-05 15:28:21,395 - DEBUG - init - Importing MpoImagePlugin
+2021-12-05 15:28:21,396 - DEBUG - init - Importing MspImagePlugin
+2021-12-05 15:28:21,397 - DEBUG - init - Importing PalmImagePlugin
+2021-12-05 15:28:21,401 - DEBUG - init - Importing PcdImagePlugin
+2021-12-05 15:28:21,402 - DEBUG - init - Importing PcxImagePlugin
+2021-12-05 15:28:21,402 - DEBUG - init - Importing PdfImagePlugin
+2021-12-05 15:28:21,456 - DEBUG - init - Importing PixarImagePlugin
+2021-12-05 15:28:21,457 - DEBUG - init - Importing PngImagePlugin
+2021-12-05 15:28:21,457 - DEBUG - init - Importing PpmImagePlugin
+2021-12-05 15:28:21,457 - DEBUG - init - Importing PsdImagePlugin
+2021-12-05 15:28:21,458 - DEBUG - init - Importing SgiImagePlugin
+2021-12-05 15:28:21,459 - DEBUG - init - Importing SpiderImagePlugin
+2021-12-05 15:28:21,460 - DEBUG - init - Importing SunImagePlugin
+2021-12-05 15:28:21,461 - DEBUG - init - Importing TgaImagePlugin
+2021-12-05 15:28:21,463 - DEBUG - init - Importing TiffImagePlugin
+2021-12-05 15:28:21,463 - DEBUG - init - Importing WebPImagePlugin
+2021-12-05 15:28:21,607 - DEBUG - init - Importing WmfImagePlugin
+2021-12-05 15:28:21,608 - DEBUG - init - Importing XbmImagePlugin
+2021-12-05 15:28:21,611 - DEBUG - init - Importing XpmImagePlugin
+2021-12-05 15:28:21,612 - DEBUG - init - Importing XVThumbImagePlugin
+2021-12-05 15:28:21,633 - INFO - _log -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-05 15:28:21,637 - INFO - _log -  * Restarting with stat
+2021-12-05 15:28:21,988 - DEBUG - update_news -  - Calling news_API-request into local var
+2021-12-05 15:28:21,988 - CRITICAL - news_API_request -  - Pulling news API
+2021-12-05 15:28:22,000 - DEBUG - _new_conn - Starting new HTTPS connection (1): newsapi.org:443
+2021-12-05 15:28:22,492 - DEBUG - _make_request - https://newsapi.org:443 "GET /v2/everything?q=covid&apiKey=80ebcdb63dbe4640b9f43277c3c50a80 HTTP/1.1" 200 None
+2021-12-05 15:28:22,495 - INFO - news_API_request -  - API returned from function
+2021-12-05 15:28:22,495 - DEBUG - update_news -  - Entering API list containing dict
+2021-12-05 15:28:22,495 - DEBUG - update_news -  - Iterating list & appending dict vals to news list
+2021-12-05 15:28:22,495 - DEBUG - update_news -  - Deleting first 20 items of list. Moving next 20 to the front
+2021-12-05 15:28:22,510 - DEBUG - init - Importing BlpImagePlugin
+2021-12-05 15:28:22,511 - DEBUG - init - Importing BmpImagePlugin
+2021-12-05 15:28:22,511 - DEBUG - init - Importing BufrStubImagePlugin
+2021-12-05 15:28:22,511 - DEBUG - init - Importing CurImagePlugin
+2021-12-05 15:28:22,511 - DEBUG - init - Importing DcxImagePlugin
+2021-12-05 15:28:22,512 - DEBUG - init - Importing DdsImagePlugin
+2021-12-05 15:28:22,512 - DEBUG - init - Importing EpsImagePlugin
+2021-12-05 15:28:22,513 - DEBUG - init - Importing FitsStubImagePlugin
+2021-12-05 15:28:22,513 - DEBUG - init - Importing FliImagePlugin
+2021-12-05 15:28:22,513 - DEBUG - init - Importing FpxImagePlugin
+2021-12-05 15:28:22,514 - DEBUG - init - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2021-12-05 15:28:22,514 - DEBUG - init - Importing FtexImagePlugin
+2021-12-05 15:28:22,515 - DEBUG - init - Importing GbrImagePlugin
+2021-12-05 15:28:22,517 - DEBUG - init - Importing GifImagePlugin
+2021-12-05 15:28:22,517 - DEBUG - init - Importing GribStubImagePlugin
+2021-12-05 15:28:22,518 - DEBUG - init - Importing Hdf5StubImagePlugin
+2021-12-05 15:28:22,519 - DEBUG - init - Importing IcnsImagePlugin
+2021-12-05 15:28:22,523 - DEBUG - init - Importing IcoImagePlugin
+2021-12-05 15:28:22,525 - DEBUG - init - Importing ImImagePlugin
+2021-12-05 15:28:22,526 - DEBUG - init - Importing ImtImagePlugin
+2021-12-05 15:28:22,527 - DEBUG - init - Importing IptcImagePlugin
+2021-12-05 15:28:22,528 - DEBUG - init - Importing JpegImagePlugin
+2021-12-05 15:28:22,528 - DEBUG - init - Importing Jpeg2KImagePlugin
+2021-12-05 15:28:22,528 - DEBUG - init - Importing McIdasImagePlugin
+2021-12-05 15:28:22,528 - DEBUG - init - Importing MicImagePlugin
+2021-12-05 15:28:22,529 - DEBUG - init - Image: failed to import MicImagePlugin: No module named 'olefile'
+2021-12-05 15:28:22,529 - DEBUG - init - Importing MpegImagePlugin
+2021-12-05 15:28:22,529 - DEBUG - init - Importing MpoImagePlugin
+2021-12-05 15:28:22,530 - DEBUG - init - Importing MspImagePlugin
+2021-12-05 15:28:22,530 - DEBUG - init - Importing PalmImagePlugin
+2021-12-05 15:28:22,534 - DEBUG - init - Importing PcdImagePlugin
+2021-12-05 15:28:22,535 - DEBUG - init - Importing PcxImagePlugin
+2021-12-05 15:28:22,535 - DEBUG - init - Importing PdfImagePlugin
+2021-12-05 15:28:22,551 - DEBUG - init - Importing PixarImagePlugin
+2021-12-05 15:28:22,552 - DEBUG - init - Importing PngImagePlugin
+2021-12-05 15:28:22,552 - DEBUG - init - Importing PpmImagePlugin
+2021-12-05 15:28:22,552 - DEBUG - init - Importing PsdImagePlugin
+2021-12-05 15:28:22,553 - DEBUG - init - Importing SgiImagePlugin
+2021-12-05 15:28:22,554 - DEBUG - init - Importing SpiderImagePlugin
+2021-12-05 15:28:22,556 - DEBUG - init - Importing SunImagePlugin
+2021-12-05 15:28:22,557 - DEBUG - init - Importing TgaImagePlugin
+2021-12-05 15:28:22,558 - DEBUG - init - Importing TiffImagePlugin
+2021-12-05 15:28:22,558 - DEBUG - init - Importing WebPImagePlugin
+2021-12-05 15:28:22,560 - DEBUG - init - Importing WmfImagePlugin
+2021-12-05 15:28:22,560 - DEBUG - init - Importing XbmImagePlugin
+2021-12-05 15:28:22,561 - DEBUG - init - Importing XpmImagePlugin
+2021-12-05 15:28:22,562 - DEBUG - init - Importing XVThumbImagePlugin
+2021-12-05 15:28:22,580 - WARNING - _log -  * Debugger is active!
+2021-12-05 15:28:22,591 - INFO - _log -  * Debugger PIN: 902-001-959
+2021-12-05 15:28:23,988 - INFO - covid_update - - Call API for hospitl cases and total deaths
+2021-12-05 15:28:23,988 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:28:24,064 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:28:24,151 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:28:24,170 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:28:24,432 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:28:24,438 - INFO - covid_update - - Call API and slicing list for last 7 days (national)
+2021-12-05 15:28:24,438 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:28:24,445 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:28:24,903 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:28:24,914 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:28:24,995 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:28:24,998 - INFO - covid_update - - Call API and slicing list for last 7 days (local)
+2021-12-05 15:28:24,998 - CRITICAL - covid_API_request - - Pulling PHE API and placing in py variable
+2021-12-05 15:28:25,005 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:28:25,093 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+2021-12-05 15:28:25,104 - DEBUG - _new_conn - Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+2021-12-05 15:28:25,342 - DEBUG - _make_request - https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22date%22%3A%22date%22%2C%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22newCasesByPublishDate%22%3A%22newCasesByPublishDate%22%2C%22cumCasesByPublishDate%22%3A%22cumCasesByPublishDate%22%2C%22newDeaths28DaysByDeathDate%22%3A%22newDeaths28DaysByDeathDate%22%2C%22cumDeaths28DaysByDeathDate%22%3A%22cumDeaths28DaysByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22totalDeaths%22%3A%22newDailyNsoDeathsByDeathDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+2021-12-05 15:28:25,346 - INFO - covid_update - - Assigning to metrics to corresponding interface units
+2021-12-05 15:28:25,346 - DEBUG - covid_update - - Update global dict with local dict
+2021-12-05 15:28:25,356 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:28:25] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:28:25,411 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:28:25] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:28:25,568 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:28:25] "[33mGET /%3CPIL.IcoImagePlugin.IcoImageFile%20image%20mode=RGBA%20size=48x48%20at%200x7FBA0A178B50%3E HTTP/1.1[0m" 404 -
+2021-12-05 15:29:33,688 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:29:33] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:29:33,784 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:29:33] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:29:39,695 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:29:39] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:29:39,790 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:29:39] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
+2021-12-05 15:29:54,950 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:29:54] "GET /index HTTP/1.1" 200 -
+2021-12-05 15:29:54,984 - INFO - _log - 127.0.0.1 - - [05/Dec/2021 15:29:54] "[33mGET /static/images/ HTTP/1.1[0m" 404 -
