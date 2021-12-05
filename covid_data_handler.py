@@ -60,6 +60,7 @@ def update():
 """ 
 
 READ FROM DATA FILE
+extract required data from nation_2021 csv
 
 """
 
@@ -85,9 +86,10 @@ def parse_csv_data(csv_filename: str):
 """ 
 
 DATA PROCESSING
+function to format and iterate through data in the .csv file. Extracting specified data
 
 """
-""" function to format and iterate through data in the .csv file. Extracting specified data """
+
 def process_covid_csv_data(covid_csv_data):
     all_cases_by_specimen = []
     alph_numbers_list_deaths = []
@@ -129,6 +131,7 @@ def process_covid_csv_data(covid_csv_data):
 """ 
 
 LIVE DATA ACCESS
+requesting and assigning the PHE covid data api
 
 """
 def covid_API_request(location = 'Exeter', location_type = 'ltla') -> dict:
@@ -138,9 +141,6 @@ def covid_API_request(location = 'Exeter', location_type = 'ltla') -> dict:
     'areaName': 'areaName',
     'areaCode': 'areaCode',
     'newCasesByPublishDate': 'newCasesByPublishDate',
-    'cumCasesByPublishDate': 'cumCasesByPublishDate',
-    'newDeaths28DaysByDeathDate': 'newDeaths28DaysByDeathDate',
-    'cumDeaths28DaysByDeathDate': 'cumDeaths28DaysByDeathDate',
     'hospitalCases':'hospitalCases',
     'totalDeaths':'newDailyNsoDeathsByDeathDate'
     }
@@ -158,10 +158,14 @@ def covid_API_request(location = 'Exeter', location_type = 'ltla') -> dict:
 """
 
 SCHEDULE COVID UPDATES
+function to create schedules. Takes name and update time. 
+Data and news to be shown in the interface are customised via config.json.
 
 """
 
-def schedule_covid_updates(update_name: str, update_interval: str):
+def schedule_covid_updates(update_name: str, update_interval: str) -> None:
+    local_data = data_dict
+
     covid_arg = request.args.get('covid-data')
     news_arg = request.args.get('news')
     repeat = request.args.get('repeat')
@@ -187,14 +191,10 @@ def schedule_covid_updates(update_name: str, update_interval: str):
         s.enter(secs_until, 1, update_news, kwargs={'keyword':config['interface_data']['news_kw']})
         s.enter(86400, 1, update_news, kwargs={'keyword':config['interface_data']['news_kw']})
         s.run(blocking=False)
-    
-    '''
-    If repeate update is checked:
-    while True, 
-    do sched event
-    move event into temporary sched list
-    insert at end of list
-    '''
+    if repeat and covid_arg:
+        s.enter(secs_until, 1, covid_update, argument=(config['interface_data']['area_name'], config['interface_data']['nation']))
+        s.enter(86400, 1, covid_update, argument=(config['interface_data']['area_name'], config['interface_data']['nation']))
+        s.run(blocking=False)
 
     """ removing sched item at index 0 after the event has been executed """
     if repeat is None:
@@ -216,8 +216,6 @@ Extra functions
 def covid_update(local_area = 'Exeter', nation = 'England'):
     """ set empty data structs for appending to """
     hospital_cases = 0
-    national_7day_cases = 0
-    local_7day_cases = 0
     total_deaths = 0
     
     """ setting national data for hospital cases and total deaths """
@@ -245,9 +243,6 @@ def covid_update(local_area = 'Exeter', nation = 'England'):
             daily_national_cases = data_item['newCasesByPublishDate']
             if daily_national_cases is not None:
                 last_7_days_national.append(daily_national_cases)
-                # national_7day_cases += data_item['newCasesByPublishDate']
-                # national_7day_rate = round(national_7day_cases / 7)
-        # national_rate = round(((last_7_days_national[0] - last_7_days_national[6]) / last_7_days_national[6]) * 100)
         national_rate = sum(last_7_days_national)
 
     """ specifying data for a selected city in the last 7 days """
@@ -262,9 +257,6 @@ def covid_update(local_area = 'Exeter', nation = 'England'):
             daily_local_cases = data_item['newCasesByPublishDate']
             if daily_local_cases is not None:
                 last_7_days_local.append(daily_local_cases)
-                # local_7day_cases += data_item['newCasesByPublishDate']
-                # local_7day_rate = round(local_7day_cases / 7)
-        # local_rate = round(((last_7_days_local[0] - last_7_days_local[6]) / last_7_days_local[6]) * 100)
         local_rate = sum(last_7_days_local)
 
     """ assigning data to dict. All data here is what's needed for the interface """
@@ -317,20 +309,7 @@ def remove_sched_event(list_item):
     sched_list.remove(list_item)
     return None
 
-# """ remove article when x is clicked """
-# def remove_article():
-#     if request.args.get('notif'):
-#         for article in news_list:
-#             index = news_list.index(article)
-#             if article != None:
-#                 if article['title'] == request.args.get('notif'):
-#                     try:
-#                         news_list.pop(index)
-#                     except Exception:
-#                         logger.debug('Error removing index')
-#                     else:
-#                         news_list.pop(index)
-#     return
+
 
 if __name__ == '__main__':
     app.run(debug=True)
