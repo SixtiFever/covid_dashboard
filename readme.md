@@ -14,7 +14,7 @@ This project uses python to populate an HTML dashboard with real time covid-19 m
 [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 
 # Getting started
-## Pre-requesites
+### Pre-requesites
 **News API key**
 - An API key will be needed for pulling news articles from the news API. Go to [news API](https://newsapi.org/) and click **Get API Key**. This key needs to be **assigned to news_api_key in config.json**.
 
@@ -29,7 +29,7 @@ Install PHE covid-19 package
 ---
 # How to use
 
-## Running:
+### Running:
 There are 2 ways to intiate the program. 
 1. Run via the 'Run python file' button on the covid_data_handler.py module
 2. Type 'python3 covid_data_handler.py'  into the terminal
@@ -37,7 +37,7 @@ There are 2 ways to intiate the program.
 Once running, go to: [covid dashboard](http://127.0.0.1:5000/index) . Here the dashboard should be running, showing
 data from the default function arguments.
 
-## Customising dashboard output
+### Customising dashboard output
 
 **Customising Covid data shown:**
 - Go to the config.json module
@@ -48,7 +48,7 @@ data from the default function arguments.
 **Custoising News feed:**
 - Set a different value for the news_kw key in config.json
 
-## Scheduling an event:
+### Scheduling an event:
 In order to change the dashboard output, an event must be scheduled. To schedule an event the from inputs on the dashboard intrface must be uses...
 1. Enter a event name and time
 2. Select one of the checkboxes -> covid data, news, repeat
