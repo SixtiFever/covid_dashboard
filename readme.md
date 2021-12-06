@@ -16,19 +16,23 @@ This project uses python to populate an HTML dashboard with real time covid-19 m
 # Getting started
 
 ### Cloning repository locally
-1. Create directory that will hold the project
+Create directory that will hold the project. Whilst in the directory, clone the project into it.
+
 > ``$ git clone https://github.com/SixtiFever/covid_dashboard.git``
+
+
 ### Pre-requesites
+
 **News API key**
 - An API key will be needed for pulling news articles from the news API. Go to [news API](https://newsapi.org/) and click **Get API Key**. This key needs to be **assigned to news_api_key in config.json**.
 
 **Packages**
 
 Install flask
-  > pip3 install flask
+  > ``$ pip3 install flask``
 
 Install PHE covid-19 package
-  > pip3 install uk_covid19
+  > ``$ pip3 install uk_covid19``
 
 
 # How to use
