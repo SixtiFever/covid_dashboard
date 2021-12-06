@@ -38,6 +38,12 @@ Install PHE covid-19 package
 # How to use
 
 ### Running:
+
+Upon opening environmnet, ensure that the correct interpreter is selected. In VSC, this is in the bottom left corner, to the right of the current branch.
+
+> ``Python 3.9.7 64-bit``
+
+
 There are 2 ways to intiate the program. 
 1. Run via the **Run python file** button on the covid_data_handler.py module
 2. Type **python3 covid_data_handler.py**  into the terminal
