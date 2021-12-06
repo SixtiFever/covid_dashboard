@@ -7,7 +7,7 @@
 # About the project
 This project uses python to populate an HTML dashboard with real time covid-19 metrics pulled from the Public Health England API.
 
-## Built with
+### Built with
 
 [Python 3.9.7](https://www.python.org/)
 
