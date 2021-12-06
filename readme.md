@@ -3,15 +3,33 @@
 <!-- Strong -->
 <!-- Horizontal Rule -->
 <!-- Link -->
-# How to use
+<!-- Blockquote -->
+# About the project
+This project uses python to populate an HTML dashboard with real time covid-19 metrics pulled from the Public Health England API.
 
-# Users
+# Getting started
+## Pre-requesites
+**News API key**
+- An API key will be needed for pulling news articles from the news API. Go to [news API](https://newsapi.org/) and click **Get API Key**. This key needs to be **assigned to news_api_key in config.json**.
+
+**Packages**
+
+Install flask
+  > pip3 install flask
+
+Install PHE covid-19 package
+  > pip3 install uk_covid19
+
+---
+# How to use
+## Users
 
 ## Running:
 There are 2 ways to intiate the program. 
 1. Run via the 'Run python file' button on the covid_data_handler.py module
 2. Type 'python3 covid_data_handler.py'  into the terminal
-- Once running, go to: [covid dashboard](http://127.0.0.1:5000/index) . Here the dashboard should be running, showing
+
+Once running, go to: [covid dashboard](http://127.0.0.1:5000/index) . Here the dashboard should be running, showing
 data from the default function arguments.
 
 ## Customising dashboard output
