@@ -7,6 +7,12 @@
 # About the project
 This project uses python to populate an HTML dashboard with real time covid-19 metrics pulled from the Public Health England API.
 
+## Built with
+
+[Python 3.9.7](https://www.python.org/)
+
+[Flask](https://flask.palletsprojects.com/en/2.0.x/)
+
 # Getting started
 ## Pre-requesites
 **News API key**
@@ -22,7 +28,6 @@ Install PHE covid-19 package
 
 ---
 # How to use
-## Users
 
 ## Running:
 There are 2 ways to intiate the program. 
@@ -44,13 +49,11 @@ data from the default function arguments.
 - Set a different value for the news_kw key in config.json
 
 ## Scheduling an event:
-- In order to change the dashboard output, an event must be scheduled
-- To schedule an event the from inputs on the dashboard intrface must be uses...
-    1. Enter a event name and time
-    2. Select one of the checkboxed -> covid data, news, repeat
-    3. Click submit
-- This event is now scheduled, and will update the dashboard at the input time
+In order to change the dashboard output, an event must be scheduled. To schedule an event the from inputs on the dashboard intrface must be uses...
+1. Enter a event name and time
+2. Select one of the checkboxes -> covid data, news, repeat
+3. Click submit
 
+This event is now scheduled, and will update the dashboard at the input time
 
-# Developers
 
