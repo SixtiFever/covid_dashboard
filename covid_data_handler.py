@@ -109,8 +109,10 @@ def process_covid_csv_data(covid_csv_data):
 
             """ cases for last 7 days """
             all_cases_by_specimen.append(data_row[6])
-    except Exception:
-        logger.error('Error iterating through .csv data')
+    except IndexError as index_err:
+        logger.error(index_err, 'Error iterating through .csv data')
+    except Exception as error:
+        logger.error(error)
     
     else:
         cases_last_7_days = all_cases_by_specimen[2:9]
@@ -162,7 +164,6 @@ Data and news to be shown in the interface are customised via config.json.
 """
 
 def schedule_covid_updates(update_name: str, update_interval: str) -> None:
-    local_data = data_dict
 
     covid_arg = request.args.get('covid-data')
     news_arg = request.args.get('news')
@@ -213,19 +214,17 @@ Extra functions
 """ Function that collates all data needed for interface """
 def covid_update(local_area = 'Exeter', nation = 'England'):
     """ set empty data structs for appending to """
-    hospital_cases = 0
     total_deaths = 0
-    
+
     """ setting national data for hospital cases and total deaths """
     logger.info('- Call API for hospitl cases and total deaths')
     try:
         local_data_dict = covid_API_request('England','nation')
+        hospital_cases = local_data_dict['data'][0]['hospitalCases']
     except Exception:
         logger.error('Error assigning covid API call to local_data_dict')
     else:
         for data_item in local_data_dict['data']:
-            if data_item['hospitalCases'] is not None:
-                hospital_cases += data_item['hospitalCases']
             if data_item['totalDeaths'] is not None:
                 total_deaths += data_item['totalDeaths']
     
@@ -306,7 +305,6 @@ def convert_list(input_list: list):
 def remove_sched_event(list_item):
     sched_list.remove(list_item)
     return None
-
 
 
 if __name__ == '__main__':

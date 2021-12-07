@@ -6,13 +6,12 @@ from flask import request
 json_file = open('Documentation/config.json', 'r')
 config = json.load(json_file)
 
-
+""" module logging setup """
 log_format = '%(asctime)s - %(levelname)s - %(funcName)s - %(message)s'
-
 logging.basicConfig(filename='sys.log' ,level=logging.DEBUG, format=log_format)
-
 logger = logging.getLogger(__name__)
 
+""" global data structures """
 news_list = []
 deleted_articles = []
 
@@ -22,9 +21,12 @@ def news_API_request(covid_terms = "Covid coronavirus COVID-19"):
     api_key = config['news_API_key']
     complete_url = base_url + "q=" + covid_terms + "&apiKey=" + api_key
     logger.critical(' - Pulling news API')
-    response = requests.get(complete_url)
-    py_obj = response.json()
-    logger.info(' - API returned from function')
+    try:
+        response = requests.get(complete_url)
+    except Exception as error:
+        logger.critical(error, 'Error calling news api')
+    else:
+        py_obj = response.json()
     return py_obj
 
 # Function to update a list with the relevant api data (title and content)
@@ -60,15 +62,4 @@ def remove_article():
                         news_list.pop(index)
     return
 
-# # Function to remove an article from news list via the interface
-# def remove_article():
-#     logger.debug(' - Remove item from news list')
-#     for article in news_list:
-#         index = news_list.index(article)
-#         if article['title'] == request.args.get('notif'):
-#             deleted_articles.append(article)
-#             news_list.pop(index)
-#     return
 
-# Calling news functions to create list
-# To change news feed, input keyword into news_API_request() argument

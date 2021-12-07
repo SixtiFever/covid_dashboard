@@ -19,6 +19,6 @@ def test_process_csv_data():
 def test_covid_API_request():
     api_pull = covid_API_request('London', 'region')
     for i in api_pull['data']:
-            assert len(i) == 9
+            assert len(i) == 6
 
 
