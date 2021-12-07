@@ -1,6 +1,6 @@
 import os
 import sched, time, json, logging
-from PIL import Image
+from typing import Dict, List
 from flask import Flask, render_template, request, send_from_directory
 from covid_news_handling import update_news, remove_article, news_list
 from uk_covid19 import Cov19API
@@ -20,8 +20,8 @@ app = Flask(__name__)
 s = sched.scheduler(time.time, time.sleep)
 
 """ global data structs to place pulled data in, which will then be returned via render_template """
-data_dict = dict()
-sched_list = list()
+data_dict: Dict[str, str] = dict()
+sched_list: List[Dict] = list()
 
 """ to populate an initial news feed upon first load """
 news_list.append(update_news())
@@ -134,7 +134,7 @@ LIVE DATA ACCESS
 requesting and assigning the PHE covid data api
 
 """
-def covid_API_request(location = 'Exeter', location_type = 'ltla') -> dict:
+def covid_API_request(location = 'Exeter', location_type = 'ltla') -> Dict:
     filter_list = [f'areaType={location_type}', f'areaName={location}'] 
     pulled_data = {
     'date': 'date',
@@ -286,7 +286,7 @@ def hh_mm(str_number: str):
     return total_secs
 
 """ takes hh_mm as argument, returns the time to wait until the original input time (arg passed into hh_mm) """
-def secs_to_wait(input_time: int):
+def secs_to_wait(input_time: int) -> int:
     local_time = time.localtime()
     logger.debug('- Converting local time to secsons since previous midnight (00:00)')
     hours, mins, seconds = ((local_time[3])*(60**2)), (local_time[4]*60) , local_time[5]
@@ -297,12 +297,12 @@ def secs_to_wait(input_time: int):
 
 
 """ Function to convert lists with str type items to int """
-def convert_list(input_list: list):
+def convert_list(input_list: list) -> list:
     int_list = list(map(int, input_list))
     return int_list
 
 """ function to automate the removal of the recently executed sched event from sched_list """
-def remove_sched_event(list_item):
+def remove_sched_event(list_item) -> None:
     sched_list.remove(list_item)
     return None
 
