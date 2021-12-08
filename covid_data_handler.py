@@ -1,10 +1,8 @@
-import os
 import sched, time, json, logging
 from typing import Dict, List
 from flask import Flask, render_template, request, send_from_directory
 from covid_news_handling import update_news, remove_article, news_list
 from uk_covid19 import Cov19API
-from types import DynamicClassAttribute
 
 """ importing and locally assigning config.json """
 jsonfile = open('Documentation/config.json', 'r')
@@ -308,4 +306,4 @@ def remove_sched_event(list_item) -> None:
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=config['debug'])

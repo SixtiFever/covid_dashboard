@@ -9,5 +9,7 @@
     "interface_data": {
         "area_name": "Portsmouth",
         "nation": "Scotland",
-        "news_kw": "Rugby"}
+        "news_kw": "Rugby"},
+    
+    "debug": "True"
 }

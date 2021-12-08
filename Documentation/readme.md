@@ -46,7 +46,7 @@ Install PHE covid-19 package
 3. Go to [covid dashboard](http://127.0.0.1:5000/index)
 
 ### Running from environment
-**In this example I use Visual Studio Code
+**In this example I use Visual Studio Code**
 1. Open the package in VSC
 2. Select covid_data_handler.py
 3. Ensure that the correct interpreter is selected
