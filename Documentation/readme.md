@@ -40,12 +40,12 @@ Install PHE covid-19 package
 **Note: The program is run from the covid_data_handler.py module**
 
 
-## Running from terminal
+### Running from terminal
 1. Jump into the directory containing the package
 2. Run **covid_data_handler.py** E.g python3 covid_data_handler.py
 3. Go to [covid dashboard](http://127.0.0.1:5000/index)
 
-## Running from environment
+### Running from environment
 **In this example I use Visual Studio Code
 1. Open the package in VSC
 2. Select covid_data_handler.py
