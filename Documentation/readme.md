@@ -39,22 +39,27 @@ Install PHE covid-19 package
 
 **Note: The program is run from the covid_data_handler.py module**
 
-### Running:
 
-Upon opening environment, ensure that the correct interpreter is selected. In VSC, this is in the bottom left corner, to the right of the current branch.
+## Running from terminal
+1. Jump into the directory containing the package
+2. Run **covid_data_handler.py** E.g python3 covid_data_handler.py
+3. Go to [covid dashboard](http://127.0.0.1:5000/index)
 
-> ``Python 3.9.7 64-bit``
+## Running from environment
+**In this example I use Visual Studio Code
+1. Open the package in VSC
+2. Select covid_data_handler.py
+3. Ensure that the correct interpreter is selected
+    > ``Python 3.9.7 64-bit``
+4. Run the file
+5. Go to [covid dashboard](http://127.0.0.1:5000/index)
 
 
 
-There are 2 ways to intiate the program. 
-1. Run via the **Run python file** button on the covid_data_handler.py module
-2. Type **python3 covid_data_handler.py**  into the terminal
-
-Once running, go to: [covid dashboard](http://127.0.0.1:5000/index) . Here the dashboard should be running, showing
+The dashboard should be running, showing
 data from the default function arguments.
 
-### Customising dashboard output
+## Customising dashboard output
 
 **Customising Covid data shown:**
 - Go to the config.json module
