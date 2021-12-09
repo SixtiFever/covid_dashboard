@@ -8,8 +8,8 @@
 
     "interface_data": {
         "area_name": "Portsmouth",
-        "nation": "Scotland",
-        "news_kw": "Rugby"},
+        "nation": "England",
+        "news_kw": "Covid"},
     
     "debug": "True"
 }
