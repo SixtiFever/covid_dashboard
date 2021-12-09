@@ -43,7 +43,8 @@ Create directory that will hold the project. Whilst in the directory, clone the 
 
 ### Running from terminal
 1. Jump into the directory containing the package
-2. Run **covid_data_handler.py** E.g python3 covid_data_handler.py
+2. Run **covid_data_handler.py** 
+   > python3 covid_data_handler.py
 3. Go to [covid dashboard](http://127.0.0.1:5000/index)
 
 ### Running from environment
@@ -81,7 +82,7 @@ This event is now scheduled, and will update the dashboard at the input time
 
 # Testing
 
-Install and run pytest to iterate through the static test modules in the package. Make sure it is run from the root directory of the package.
+Install and run [pytest](https://docs.pytest.org/en/6.2.x/) to iterate through the static test modules in the package. Make sure it is run from the root directory of the package.
 
 > $ pip3 install pytest
 > $ python3 pytest
