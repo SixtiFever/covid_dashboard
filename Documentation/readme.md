@@ -16,7 +16,7 @@ This project uses python to populate an HTML dashboard with real time covid-19 m
 # Pre-requesites
 
 **News API key**
-- An API key will be needed for pulling news articles from the news API. Go to [news API](https://newsapi.org/) and click **Get API Key**. This key needs to be **assigned to news_api_key in config.json**.
+- An API key will be needed for pulling news articles from the news API. Go to [news API](https://newsapi.org/) and click **Get API Key**. This key needs to be **assigned to news_api_key** in **Documentation/config.json**.
 
 **Packages**
 
@@ -38,16 +38,16 @@ Create directory that will hold the project. Whilst in the directory, clone the 
 
 # How to use
 
-**Note: The program is run from the covid_data_handler.py module**
+**Note: The program is executed from the covid_data_handler.py module**
 
 
 ### Running from terminal
 1. Jump into the directory containing the package
 2. Run **covid_data_handler.py** 
-   > python3 covid_data_handler.py
+   > ``$ python3 covid_data_handler.py``
 3. Go to [covid dashboard](http://127.0.0.1:5000/index)
 
-### Running from environment
+### Running from programming environment
 **In this example I use Visual Studio Code**
 1. Open the package in VSC
 2. Select covid_data_handler.py
@@ -65,11 +65,13 @@ data from the default function arguments.
 **Customising Covid data shown:**
 - Go to the config.json module
 - Set different values for the area_name and area_type keys
-    - area_name -> Can be any city in the UK
-    - area_nation -> region, nation, ltla, overview, nhsReghion, utla
+    - **area_name** -> Can be any city in the UK
+    - **area_nation** -> Can be set to either region, nation, ltla, overview, nhsReghion, utla
+  
+  Visit the [PHE Developers Guide](https://coronavirus.data.gov.uk/details/developers-guide) for more information on customisation.
 
 **Custoising News feed:**
-- Set a different value for the news_kw key in config.json
+- Set a different value for the news_kw key in **Documentation/config.json**
 
 ### Scheduling an event:
 In order to change the dashboard output, an event must be scheduled. To schedule an event the from inputs on the dashboard intrface must be uses...
