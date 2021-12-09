@@ -4,7 +4,7 @@
 <!-- Horizontal Rule -->
 <!-- Link -->
 <!-- Blockquote -->
-# About the project
+# Introduction
 This project uses python to populate an HTML dashboard with real time covid-19 metrics pulled from the Public Health England API.
 
 ### Built with
@@ -13,15 +13,7 @@ This project uses python to populate an HTML dashboard with real time covid-19 m
 
 [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 
-# Getting started
-
-### Cloning repository locally
-Create directory that will hold the project. Whilst in the directory, clone the project into it.
-
-> ``$ git clone https://github.com/SixtiFever/covid_dashboard.git``
-
-
-### Pre-requesites
+# Pre-requesites
 
 **News API key**
 - An API key will be needed for pulling news articles from the news API. Go to [news API](https://newsapi.org/) and click **Get API Key**. This key needs to be **assigned to news_api_key in config.json**.
@@ -33,6 +25,15 @@ Install flask
 
 Install PHE covid-19 package
   > ``$ pip3 install uk_covid19``
+
+
+# Installation
+
+### Cloning repository locally
+Create directory that will hold the project. Whilst in the directory, clone the project into it.
+
+> ``$ git clone https://github.com/SixtiFever/covid_dashboard.git``
+
 
 
 # How to use
@@ -55,11 +56,10 @@ Install PHE covid-19 package
 5. Go to [covid dashboard](http://127.0.0.1:5000/index)
 
 
-
 The dashboard should be running, showing
 data from the default function arguments.
 
-## Customising dashboard output
+### Customising dashboard output
 
 **Customising Covid data shown:**
 - Go to the config.json module
@@ -77,5 +77,13 @@ In order to change the dashboard output, an event must be scheduled. To schedule
 3. Click submit
 
 This event is now scheduled, and will update the dashboard at the input time
+
+
+# Testing
+
+Install and run pytest to iterate through the static test modules in the package. Make sure it is run from the root directory of the package.
+
+> $ pip3 install pytest
+> $ python3 pytest
 
 
